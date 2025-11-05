@@ -1,6 +1,7 @@
 import React from 'react';
 import { Logo } from './Logo';
 import { Moon, Menu, ChevronRight, Shield, Users, Briefcase, FileText, Target, BarChart, QrCode, Facebook, Instagram, Linkedin, Star } from 'lucide-react';
+import logoImage from 'figma:asset/4a40de7142e78c79ebd94d6ac70a0ea265631112.png';
 
 export const MobileView = () => {
   return (
@@ -22,16 +23,8 @@ export const MobileView = () => {
       <header className="bg-white border-b border-gray-200 px-4 py-3 sticky top-0 z-50">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="40" height="40" rx="8" fill="#D81E2A"/>
-              <path d="M20 8C18 8 16 10 16 14C16 18 20 22 20 26C20 22 24 18 24 14C24 10 22 8 20 8Z" fill="white" opacity="0.9"/>
-              <circle cx="20" cy="14" r="2.5" fill="white"/>
-              <path d="M12 20L16 18M24 18L28 20M20 26L20 30" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
-              <circle cx="12" cy="20" r="2" fill="white"/>
-              <circle cx="28" cy="20" r="2" fill="white"/>
-              <circle cx="20" cy="30" r="2" fill="white"/>
-            </svg>
-            <span className="text-[18px] tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, color: '#222222' }}>
+            <img src={logoImage} alt="OpenPayTN Logo" className="w-9 h-9 object-contain" />
+            <span className="text-[18px] tracking-tight leading-none" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, color: '#222222' }}>
               OpenPayTN
             </span>
           </div>
@@ -323,13 +316,13 @@ export const MobileView = () => {
           <div>
             <h4 className="text-[15px] mb-3" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>Follow Us</h4>
             <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 bg-[#333] rounded-full flex items-center justify-center">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-[#333] rounded-full flex items-center justify-center hover:bg-[#D81E2A] transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 bg-[#333] rounded-full flex items-center justify-center">
+              <a href="https://www.instagram.com/openpaytn/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-[#333] rounded-full flex items-center justify-center hover:bg-[#D81E2A] transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 bg-[#333] rounded-full flex items-center justify-center">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-[#333] rounded-full flex items-center justify-center hover:bg-[#D81E2A] transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
             </div>
